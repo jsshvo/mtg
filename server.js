@@ -10,12 +10,14 @@ var Server = function() {
   var io = require('socket.io');
   var sio = null;
   var request = require('request');
-  var dbMgr = require('./dbmgr.js').getInstance();
+  //var dbMgr = require('./dbmgr.js').getInstance();
 
   var imgHandlerURL = "http://gatherer.wizards.com/Handlers/Image.ashx";
   var cardDetailsURL = "http://gatherer.wizards.com/Pages/Card/Details.aspx";
   var connections = [];
 
+
+  console.log("WebServer INIT");
   /*function getImageURLByCardName(cardName) {
     var cn = encodeURIComponent(cardName);
     cn += "&type=card";
