@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="MTG-OpenBoard">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MTG-OpenBoard</title>
+	<link rel="stylesheet" type="text/css" media="all" href="css/lib/jquery-ui-1.10.4.custom.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/animations.css" />
+    <link rel="icon" type="image/x-icon" href="rsc/img/favicon.ico" />
+	<script type="text/javascript" src="js/lib/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript" src="js/lib/modernizr.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+  <script type="text/javascript" src="http://code.angularjs.org/1.2.13/angular-animate.js"></script>
+  <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lib/angular-bootstrap.js"></script>
+  <script type="text/javascript" src="client.js"></script>
+</head>
+<body>
+  <div id="bg"></div>
+	<div id="loginFloater" class="floater"></div>
+	<div id="loginPanel" class="basePanel" ng-controller="LoginController">
+    <!--<img src="rsc/img/mtg_openboard_logo.png" alt="MTG OpenBoard" />
+		<form action="/home" method="post">
+			<p>Type your username and password to start:</p>
+			<input name="uname" id="uname" type="text" placeholder="Anonymous"></input>
+			<input name="pwd" id="pwd" type="password" placeholder="Password"></input>
+			<input type="submit" value="Login"></input>
+		</form>
+    <a href="#" class="linkButton" ng-click="toggleCreateAccountView();">{{createAccountLink}}</a>
+    <div id="createAccount" ng-show="show_create_account" class="animate-show panel">
+  		<form id="create_account" action="/create_account" method="post">
+        <div id="left">
+          <div class="row_container">
+            <span class="label">Username:</span><input name="set_uname" id="set_uname" type="text" placeholder="This is your account name"></input>
+          </div>
+          <div class="row_container">
+    			  <span class="label">Password:</span><input name="set_pwd" id="set_pwd" type="password" placeholder="This is your password"></input>
+          </div>
+          <div class="row_container">
+			      <span class="label">Re-enter password:</span><input name="verify_set_pwd" id="verify_set_pwd" type="password" placeholder="Type your password again"></input>
+          </div>
+          <div class="row_container">
+    			  <span class="label">E-mail:</span><input name="set_email" id="set_email" type="email" placeholder="your_address@something.com"></input>
+          </div>
+        </div>
+        <div id="right">
+  			  <input type="submit" value="Create account" ng-model="createAccountBtn"></input>
+        </div>
+        <div style="clear:both;"></div>
+      </form>
+    </div>-->
+	</div>
+</body>
+</html>
