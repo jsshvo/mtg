@@ -2,4 +2,4 @@
 
 'use strict';
 
-console.log("CLIENT INIT");
+var app = angular.module('MTGOpenboard', ['ui.bootstrap']);

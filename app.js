@@ -15,6 +15,9 @@ var port = 4004;
 app.use(morgan());
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/client/ui'));
+app.use('/lib', express.static(__dirname + '/node_modules'));
+
+//CARD: https://api.magicthegathering.io/v1/cards/<MultiverseId>
 
 /*app.configure(function() {
     app.use('/js', express.static(__dirname + '/js'));
