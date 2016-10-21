@@ -69,6 +69,25 @@ div#header {
     text-shadow: 1px 1px 0px rgb(125,125,25);
     padding-left:0;
 }
+.uib-tabset, .nav-tabs {
+    border:none;
+    font-size:1.2em;
+}
+.uib-tab, .nav-item {
+    border:none !important;
+    color:rgb(100,100,00) !important;
+    background-color: rgba(175,175,75,0.6) !important;    
+}
+.uib-tab.active, .nav-item.active {
+    /*border: 2px solid rgba(175,175,75,0.8) !important;*/
+    color:rgb(100,100,00) !important;
+    background-color: rgba(175,175,75,0.8) !important;    
+}
+.nav-link {
+    border:none !important;
+    background:none !important;
+    margin:0 !important;
+}
 h2, h3 {
     margin-left:16px;
 }
