@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MTG-OpenBoard</title>
     <link rel="stylesheet" type="text/css" media="all" href="lib/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" media="all" href="css/ui-bootstrap-2.2.0-csp.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="ui/css/ui-bootstrap-2.2.0-csp.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="ui/css/main.css" />
 	<!--<link rel="stylesheet" type="text/css" media="all" href="css/lib/jquery-ui-1.10.4.custom.min.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="css/animations.css" />
     <link rel="icon" type="image/x-icon" href="rsc/img/favicon.ico" />
@@ -17,9 +17,10 @@
   <script type="text/javascript" src="http://code.angularjs.org/1.2.13/angular-animate.js"></script>
   <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
   <script type="text/javascript" src="lib/angular/angular.min.js"></script>
-  <script type="text/javascript" src="js/ui-bootstrap-2.2.0.min.js"></script>
-  <script type="text/javascript" src="js/ui-bootstrap-tpls-2.2.0.js"></script>
-  <script type="text/javascript" src="js/client.js"></script>
+  <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="ui/js/ui-bootstrap-2.2.0.min.js"></script>
+  <script type="text/javascript" src="ui/js/ui-bootstrap-tpls-2.2.0.js"></script>
+  <script type="text/javascript" src="ui/js/client.js"></script>
 </head>
 <body>
 	<div id="main" class="container-fluid">
@@ -30,10 +31,11 @@
     <div id="area" class="panel panel-default">
     <!--<div class="panel-heading"><h2>Deck Creator</h2></div>-->
     <uib-tabset active="0">
-      <uib-tab index="0" heading="Deck Creator">Deck Creator</uib-tab>
-      <uib-tab index="1" heading="Lobby">Lobby</uib-tab>
-      <uib-tab index="2" heading="Board">Board</uib-tab>
+      <uib-tab index="0" heading="Lobby" ui-sref="lobby"></uib-tab>
+      <uib-tab index="1" heading="Deck Creator" ui-sref="deckcreator"></uib-tab>
+      <uib-tab index="2" heading="Board" ui-sref="board"></uib-tab>
     </uib-tabset>
+    <div ui-view></div>
     <!--<img src="rsc/img/mtg_openboard_logo.png" alt="MTG OpenBoard" />
 		<form action="/home" method="post">
 			<p>Type your username and password to start:</p>
